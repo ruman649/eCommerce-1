@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Roboto:ital,wght@0,700;1,400&family=Ubuntu:wght@300;400;500;700&display=swap');
 
+
+
+
+
+/* ============ start by defoult =================  */
 *,
 *::before,
 *::after{
@@ -15,3 +20,162 @@
     outline: 0 !important;
     outline-offset: 0;
 }
+
+a, a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color) !important;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+
+
+/* ========== end by default ======================== */
+
+
+
+
+
+
+/* ===========variable section start =================== */
+:root{
+    --primary-color: #fd8eaf;
+    --white-color: #fff;
+    --text-color: #9e9999;
+    --black-color: #000;
+}
+/* ===========variable section end =================== */
+
+
+
+/* ============= custom scroll bar start ================= */
+::-webkit-scrollbar{
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+::-webkit-slider-thumb{
+    background: var(--primary-color);
+}
+/* ============= custom scroll bar end ================= */
+
+
+
+/* ============ custom css design start ============ */
+h1{
+    font-size: 6.2rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+h2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+h4{
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--black-color);
+}
+h5{
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    color: var(--text-color);
+}
+.main-btn{
+    border: 1px solid var(--primary-color);
+    color: var(--white-color);
+}
+
+.wrapper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+/* ============ custom css design end ============ */
+
+
+
+
+
+/* ============ navbar start ============ */
+.navbar-wrap{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+
+.navbar-wrap .nav-item{
+    padding: 0 0.2rem;
+    transition: all 0.2s ease-in;
+}
+
+.navbar-brand img{
+    width: 10rem;
+}
+.navbar-wrap .nav-item .nav-link{
+    color: var(--white-color);
+}
+.navbar-wrap .nav-item .nav-link:hover,
+.navbar-wrap .nav-item .nav-link:active{
+    color: var(--primary-color);
+}
+/* ============ navbar end ============ */
+
+
+
+
+/* ============ navbar style on scroll ============ */
+.navbar-wrap.scroll_on{
+    position: fixed;
+    background-color: var(--black-color);
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0.12rem 1.5rem rgb(27, 22, 22);
+    transition: all 0.2s ease-in-out;
+}
+/* ============ navbar style on scroll end ============ */
+
+
+
+
+/* ============ carusal design============ */
+.carousel .carousel-caption{
+    top: 40%;
+    right: 50%;
+    text-align: left;
+
+}
+
+
+
+
+
