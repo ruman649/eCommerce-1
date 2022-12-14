@@ -30,6 +30,10 @@
     #home{
         margin-top: 55px;
     }
+    #about .carousel-inner img{
+        border-radius: 0 0px 0px 0;
+        /* margin: 2rem 1rem; */
+    }
 }
 
 @media (max-width:475px){

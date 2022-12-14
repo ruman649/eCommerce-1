@@ -7,7 +7,7 @@
 /* ============ start by defoult =================  */
 *,
 *::before,
-*::after{
+*::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
@@ -16,28 +16,31 @@
 
 :active,
 :hover,
-:focus{
+:focus {
     outline: 0 !important;
     outline-offset: 0;
 }
 
-a, a:hover{
+a,
+a:hover {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: var(--primary-color) !important;
 }
 
-ul, ol{
+ul,
+ol {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 100%;
     font-weight: 700;
@@ -53,60 +56,68 @@ body{
 
 
 /* ===========variable section start =================== */
-:root{
+:root {
     --primary-color: #fd8eaf;
     --white-color: #fff;
     --text-color: #9e9999;
     --black-color: #000;
 }
+
 /* ===========variable section end =================== */
 
 
 
 /* ============= custom scroll bar start ================= */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 0.6rem;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: var(--white-color);
 }
-::-webkit-slider-thumb{
+
+::-webkit-slider-thumb {
     background: var(--primary-color);
 }
+
 /* ============= custom scroll bar end ================= */
 
 
 
 /* ============ custom css design start ============ */
-h1{
+h1 {
     font-size: 6.2rem;
     font-weight: 900;
     color: var(--primary-color);
 }
-h2{
+
+h2 {
     font-weight: 700;
     font-size: 3rem;
     color: var(--white-color);
     text-transform: capitalize;
 }
-h4{
+
+h4 {
     font-weight: 900;
     font-size: 1.5rem;
     color: var(--black-color);
 }
-h5{
+
+h5 {
     font-weight: 700;
     font-size: 1rem;
     color: var(--primary-color);
 }
-p{
+
+p {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.7rem;
     color: var(--text-color);
 }
-.main-btn{
+
+.main-btn {
     border: 1px solid var(--primary-color);
     color: var(--white-color);
 }
@@ -115,6 +126,7 @@ p{
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+
 /* ============ custom css design end ============ */
 
 
@@ -122,7 +134,7 @@ p{
 
 
 /* ============ navbar start ============ */
-.navbar-wrap{
+.navbar-wrap {
     position: absolute;
     width: 100%;
     left: 0;
@@ -132,28 +144,31 @@ p{
 }
 
 
-.navbar-wrap .nav-item{
+.navbar-wrap .nav-item {
     padding: 0 0.2rem;
     transition: all 0.2s ease-in;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 10rem;
 }
-.navbar-wrap .nav-item .nav-link{
+
+.navbar-wrap .nav-item .nav-link {
     color: var(--white-color);
 }
+
 .navbar-wrap .nav-item .nav-link:hover,
-.navbar-wrap .nav-item .nav-link:active{
+.navbar-wrap .nav-item .nav-link:active {
     color: var(--primary-color);
 }
+
 /* ============ navbar end ============ */
 
 
 
 
 /* ============ navbar style on scroll ============ */
-.navbar-wrap.scroll_on{
+.navbar-wrap.scroll_on {
     position: fixed;
     background-color: var(--black-color);
     width: 100%;
@@ -162,13 +177,14 @@ p{
     box-shadow: 0 0.12rem 1.5rem rgb(27, 22, 22);
     transition: all 0.2s ease-in-out;
 }
+
 /* ============ navbar style on scroll end ============ */
 
 
 
 
 /* ============ carusal design============ */
-.carousel .carousel-caption{
+.carousel .carousel-caption {
     top: 40%;
     right: 50%;
     text-align: left;
@@ -179,3 +195,102 @@ p{
 
 
 
+/* about .carousel disign  */
+#about .carousel-inner img {
+    border-radius: 0 40px 40px 0;
+    /* margin: 2rem 1rem; */
+}
+
+#about .carousel-indicators {
+    margin-bottom: -2rem;
+}
+
+#about .carousel-indicators [data-bs-target] {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.main-btn-2 {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.main-btn-2:hover {
+    color: var(--black-color) !important;
+    background-color: var(--text-color) !important;
+}
+
+
+
+
+/* features section  */
+
+#features .card h3 {
+    text-transform: capitalize;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#features .card {
+    border: none;
+}
+
+#features .card img {
+    height: 400px;
+}
+
+
+.f-img {
+    shadow: 1px 2px 5px solid var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* headphone section  */
+.pro_img {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.pro_img img{
+    transition: all 0.5s ease-in-out;
+}
+.pro_img img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* footer  */
+
+#footer{
+    background-color: var(--black-color);
+}
+
+#footer h4{
+    color: white;
+    text-transform: capitalize;
+}
+
+#footer button{
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--text-color);
+
+}
+#footer button i{
+    font-size: 1rem;
+    padding: 8px;
+}
+#footer button i:hover{
+    /* font-size: 2rem; */
+    color: var(--primary-color);
+}
